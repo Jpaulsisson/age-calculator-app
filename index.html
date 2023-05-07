@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/style.scss"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator App</title>
+  </head>
+  <body>
+    <div class="app-container">
+
+      <!--labels and inputs-->
+      <form id="input-form" class="input-container">
+        <label for="month" class="labels" id="month-label">MONTH</label>
+        <input required maxlength='2' placeholder="MM" type="numeric" min="1" max="12" class="inputs" id="month" name="month">
+
+        <label for="day" class="labels" id="day-label">DAY</label>
+        <input required maxlength='2' placeholder="DD" type="numeric" min="1" max="31" class="inputs" id="day" name="day">
+
+        <label for="year" class="labels" id="year-label">YEAR</label>
+        <input required maxlength='4' placeholder="YYYY" type="numeric" min="0" max="9999" minlength='4' maxlength='4' class="inputs" id="year" name="year">
+      </form>
+
+      <!--submit button section-->
+      <div class="button-container">
+        <div class="spacer"></div>
+        <button type="submit" id="submit-button" class="submit-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+        </button>
+      </div>
+
+      <!--results section-->
+      <div class="results-container">
+        <h2 id="years-result" class="results years-result" name="years-result">- -</h2><label class="results-label" for="years-result">YEARS</label>
+        <h2 id="months-result" class="results months-result" name="months-result">- -</h2><label class="results-label" for="months-result">MONTHS</label>
+        <h2 id="days-result" class="results days-result" name="days-result">- -</h2><label class="results-label" for="days-result">DAYS</label>
+      </div>
+
+      <!-- <div class="clock-container">
+        <div class="current-date"></div>
+        <div class="current-time"></div>
+      </div> -->
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
