@@ -145,7 +145,12 @@ function output() {
 ////////////////////////////////////
 ////////////////////////////////////
   const result = [finalMonthNum, finalDayNum, finalYearNum];
-  console.log(result);
+  if (finalMonthNum == undefined || finalDayNum == undefined || finalYearNum == undefined) {
+    alert(`All three fields must have a numeric value for this to work, because it wasn't worth doing some weird thing to make it auto-complete`)
+    finalYearNum = 'put'
+    finalMonthNum = 'in'
+    finalDayNum = 'numbers'
+  }
 
   monthResult.innerHTML = finalMonthNum;
   dayResult.innerHTML = finalDayNum;

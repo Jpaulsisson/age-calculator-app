@@ -12,13 +12,13 @@
       <!--labels and inputs-->
       <form id="input-form" class="input-container">
         <label for="month" class="labels" id="month-label">MONTH</label>
-        <input required maxlength='2' placeholder="MM" type="numeric" min="1" max="12" class="inputs" id="month" name="month">
+        <input required minlength='1' maxlength='2' placeholder="MM" type="number" min="1" max="12" class="inputs" id="month" name="month">
 
         <label for="day" class="labels" id="day-label">DAY</label>
-        <input required maxlength='2' placeholder="DD" type="numeric" min="1" max="31" class="inputs" id="day" name="day">
+        <input required minlength='1' maxlength='2' placeholder="DD" type="number" min="1" max="31" class="inputs" id="day" name="day">
 
         <label for="year" class="labels" id="year-label">YEAR</label>
-        <input required maxlength='4' placeholder="YYYY" type="numeric" min="0" max="9999" minlength='4' maxlength='4' class="inputs" id="year" name="year">
+        <input required maxlength='4' placeholder="YYYY" type="number" min="0" max="9999" minlength='4' maxlength='4' class="inputs" id="year" name="year">
       </form>
 
       <!--submit button section-->
